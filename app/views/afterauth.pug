@@ -1,0 +1,9 @@
+script.
+    if (window.opener) {
+        window.opener.focus();
+
+        if (window.opener.loginCallBack) {
+            window.opener.loginCallBack('#{username}');
+        }
+    }
+    window.close();

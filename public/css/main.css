@@ -1,0 +1,101 @@
+/****** Main Styling ******/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 60px 0 0;
+}
+
+body.anon .auth-only {
+	display: none;
+}
+
+body.authed .noauth-only {
+	display: none;
+}
+
+.placeholder {
+	display: none;
+}
+
+.btn-twitter {
+	background-color: #4099FF;
+	color: #fff;
+}
+
+.btn-twitter:before {
+	content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(/public/img/twitter-32.png);
+    background-size: 16px;
+    position: relative;
+    top: 4px;
+    margin-right: 8px;
+}
+
+.btn-twitter:hover {
+	color: #fff;
+}
+
+.navbar-nav>li>a.login {
+	padding-top: 8px;
+	padding-bottom: 0;
+}
+
+#login-btn {
+	width: 200px;
+	padding: 7px 5px;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+.yelp {
+	text-align: center;
+	font-size: 12px;
+}
+
+.yelp img {
+	height: 28px;
+    vertical-align: middle;
+    margin: 0 0 12px 4px;
+}
+
+.bars {
+	clear: both;
+	margin-top: 40px;
+}
+
+.bar {
+	border-bottom: 1px solid #ddd;
+	margin: 10px;
+	padding: 4px;
+}
+
+.bar-title, .bar-intents {
+	display: inline-block;
+}
+
+.bar-intents {
+	padding: 4px 16px;
+    margin: 0 0 0 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: -4px;
+}
+
+body.authed .bar-intents {
+    cursor: pointer;
+}
+body.authed .bar-intents:hover {
+    background-color: #ddd;
+}
+
+.bar-thumbnail {
+	float: left;
+	margin: 16px 16px 16px 0;
+}
